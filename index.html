@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人求职简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #0066cc;
+        }
+        .avatar {
+            width: 120px;
+            height: 160px;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+        .basic-info h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .contact {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #0066cc;
+        }
+        .content {
+            padding-left: 20px;
+            line-height: 1.8;
+            color: #333;
+        }
+        .content-item {
+            margin-bottom: 15px;
+        }
+        .content-item h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .content-item h3 span {
+            font-size: 14px;
+            color: #999;
+            font-weight: normal;
+        }
+        .content-item ul {
+            list-style: disc;
+            margin-left: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background: #e8f4ff;
+            padding: 5px 12px;
+            border-radius: 4px;
+            color: #0066cc;
+            font-size: 14px;
+        }
+        .github-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .github-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- 头部：照片+基本信息 -->
+        <div class="header">
+            <div class="avatar">
+                <!-- 替换为照片：删除文字，添加 <img src="照片路径" width="120" height="160"> -->
+                照片位置
+            </div>
+            <div class="basic-info">
+                <h1>XXX（替换为姓名）</h1>
+                <div class="contact">
+                    <p>电话：XXX（替换为手机号）</p>
+                    <p>邮箱：XXX（替换为邮箱）</p>
+                    <p>GitHub：XXX（替换为GitHub地址）</p>
+                    <p>地址：XXX（可选）</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 教育背景 -->
+        <div class="section">
+            <div class="section-title">教育背景</div>
+            <div class="content">
+                <div class="content-item">
+                    <h3>浙江大学 <span>2025.09 - 至今</span></h3>
+                    <p>硕士研究生 | 软件学院 | 人工智能专业</p>
+                </div>
+                <div class="content-item">
+                    <h3>中山大学 <span>2021.09 - 2025.06</span></h3>
+                    <p>本科 | 软件工程学院 | 软件工程专业</p>
+                    <p>GPA：4.1/5.0 | 英语六级：527分</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 荣誉奖项 -->
+        <div class="section">
+            <div class="section-title">荣誉奖项</div>
+            <div class="content">
+                <ul>
+                    <li>中山大学优秀毕业论文奖（校级）| 2025年6月</li>
+                    <li>中山大学专项学生奖学金（学习进步奖）| 2024年X月</li>
+                    <li>中山大学优秀学生奖学金（校级三等奖）| 2024年X月</li>
+                    <li>全国大学生创新创业训练计划项目（校级验收良好）| 2024年1月</li>
+                    <li>中山大学程序设计新手赛（校级三等奖）| 2023年4月</li>
+                    <li>中山大学优秀学生奖学金（校级二等奖）| 2022年12月</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 项目经历 -->
+        <div class="section">
+            <div class="section-title">项目经历</div>
+            <div class="content">
+                <div class="content-item">
+                    <h3>网络热点挖掘与舆情监控系统 <span>Gitee开源</span></h3>
+                    <ul>
+                        <li>技术栈：Vue3 + Django(Django REST Framework) + MySQL + 大模型</li>
+                        <li>开发实时热点捕捉与分析系统，实现数据爬取处理、热度计算、事件抽取、情感分析及可视化展示</li>
+                        <li>负责核心模块：数据爬取与清洗、后端业务逻辑设计与开发，保障数据实时性与准确性</li>
+                    </ul>
+                </div>
+                <div class="content-item">
+                    <h3>《对叁》多人在线共享平台 <span>GitHub开源</span></h3>
+                    <ul>
+                        <li>技术栈：Vue2 + Gin + MySQL</li>
+                        <li>开发类小红书社交平台，支持文本/图片分享、个性化推荐等核心功能</li>
+                        <li>负责后端全流程开发：接口设计、数据存储、业务逻辑实现，保障高并发下的稳定性</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 科研经历 -->
+        <div class="section">
+            <div class="section-title">科研经历</div>
+            <div class="content">
+                <div class="content-item">
+                    <h3>大创项目：基于智能算法的无人机软件可靠性分析模型 <span>校级 | 主持人</span></h3>
+                    <ul>
+                        <li>针对无人机软件可靠性评估指标不统一、结果不全面问题，提出基于故障知识图谱+贝叶斯网络的评估模型与方法</li>
+                        <li>负责选题设计、导师沟通、知识图谱构建、评估方法设计及数据集分析，项目验收为良好</li>
+                    </ul>
+                </div>
+                <div class="content-item">
+                    <h3>本科毕业论文：音频驱动的情感融合说话视频生成的研究 <span>校级优秀毕业论文</span></h3>
+                    <ul>
+                        <li>聚焦情感融合的虚拟人视频生成技术，探索音频特征与情感表达的映射关系，优化生成效果</li>
+                        <li>独立完成选题、实验设计、模型调优及论文撰写，获评校级优秀毕业论文</li>
+                    </ul>
+                </div>
+                <div class="content-item">
+                    <h3>综述撰写：基于深度学习的2D虚拟人驱动技术综述 <span>《计算机研究与发展》在投 | 第二作者</span></h3>
+                    <ul>
+                        <li>负责虚拟人驱动原理、基础模型、自回归/强化学习生成方法及集成驱动模块撰写</li>
+                        <li>主导综述结构性重构，提升逻辑完整性与学术规范性</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 开源贡献 -->
+        <div class="section">
+            <div class="section-title">开源贡献</div>
+            <div class="content">
+                <p>贡献链接：<a href="https://github.com/NanmiCoder/MediaCrawler/pull/345" class="github-link" target="_blank">https://github.com/NanmiCoder/MediaCrawler/pull/345</a></p>
+                <ul>
+                    <li>为MediaCrawler（媒体数据爬取工具）贡献代码优化，修复核心爬取逻辑中的异常处理漏洞</li>
+                    <li>优化数据解析模块，提升多平台媒体数据（图文/视频）爬取的稳定性与准确率</li>
+                    <li>补充单元测试用例，完善项目文档注释，提升代码可维护性</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 专业技能 -->
+        <div class="section">
+            <div class="section-title">专业技能</div>
+            <div class="content">
+                <div class="skill-list">
+                    <div class="skill-item">编程语言：C/C++、Python、Java、Golang</div>
+                    <div class="skill-item">后端开发：Django、DRF、Gin、MySQL、Redis</div>
+                    <div class="skill-item">前端开发：Vue2/Vue3、Element UI、HTML/CSS/JS</div>
+                    <div class="skill-item">操作系统：Linux（CentOS/Ubuntu）、Shell脚本</div>
+                    <div class="skill-item">数据处理：Pandas、NumPy、正则表达式、数据清洗</div>
+                    <div class="skill-item">AI相关：PyTorch、TensorFlow、贝叶斯网络、知识图谱</div>
+                    <div class="skill-item">工具：Git、Docker、Postman、Jupyter Notebook</div>
+                    <div class="skill-item">软实力：需求分析、文档撰写、团队协作、问题排查</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
